@@ -7,77 +7,100 @@
     <meta name="keywords" content="portfolio, web development, full-stack developer, github , gitlab">
     <meta name="author" content="Mohamed Hassouna">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Moahmed's Portfolio</title>
 </head>
 <body>
-    <header id="home">
-        <a href="#home" class="logo">Mou7</a>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <aside>
-        <div class="content-text">
-            <h1>Hi there!👋🏼I'm Mohamed hassouna</h1>
-            <h3>future of full-Stack developer</h3>
-            <br><br>
-            <button>Download CV</button>
+    <header id="home" class="bg-dark text-white fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#home" class="navbar-brand logo">Mou7</a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="#intro" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100023936994276" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://instagram.com/mohamed._.hassouna?igshid=YzAwZjE1ZTI0Zg==" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mohamed-hassouna-7063142a0/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/mohamedhassouna242004"target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <br><br>
-            
-        </div> 
+    </header>
+    
+
+    <aside id="intro" class="d-flex align-items-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Hi there! 👋🏼 I'm Mohamed Hassouna</h1>
+                    <h3>Full-Stack Developer</h3>
+                    <button class="btn btn-warning mt-3">Download CV</button>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="social">
+                        
+                        <a href="https://www.facebook.com/profile.php?id=100023936994276" class="mr-3" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/mohamed._.hassouna" class="mr-3" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohamed-hassouna-7063142a0/" class="mr-3" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mohamedhassouna242004" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </aside>
-    <main>
-        <img src="mou7.jpg" alt="Mohamed Hassouna">
+    
+
+
+    <main id="about" class="about-container container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="mou7.jpg" alt="Mohamed Hassouna" class="about-image img-fluid rounded-circle shadow">
+            </div>
+            <div class="col-md-8">
+                <p class="about-paragraph">I am Mohamed Hassouna, an enthusiastic and dedicated IT student with a strong passion for web development and programming. Currently pursuing my studies in the Development of Information Systems at ISET Tozeur, I have honed my skills in full-stack development, specializing in technologies such as HTML, CSS, JavaScript, Angular, Symfony, Java, Python, PHP, and MySQL. My goal is to leverage my knowledge and creativity to build impactful web applications that provide seamless user experiences. I am always eager to learn new technologies and collaborate on innovative projects that challenge me and allow me to grow as a developer.</p>
+            </div>
+        </div>
     </main>
-    <section id="skills" >
-        <h1 class="sk"><i class="fas fa-cogs"></i>
-            Skills & Abilities </h1>
-        <br><br>
-            <div class="html">HTML<i class="fa-brands fa-html5 html-icons"></i></div>
-            <div class="css">CSS<i class="fa-brands fa-css3 css-icons"></i></div>
-            <div class="js">JAVASCRIPT<i class="fa-brands fa-js j-icons"></i></div>    
-            <div class="an">ANGULAR <i class="fa-brands fa-angular"></i></div>
-            <div class="sy">SYMFONNY<i class="fa-brands fa-symfony"></i></div>
-            <div class="java"> JAVA <i class="fa-brands fa-java ja-icons"></i></div>
-            <div class="py">PYTHON<i class="fa-brands fa-python python-icons"></i></div>
-            <div class="php">PHP<i class="fa-brands fa-php php-icon"></i></div>
-            <div class="bd">Base de donnees(MY SQL) <i class="fas fa-database database-icon"></i></div>
+    
+
+
+    <section id="skills" class="py-5 bg-light text-center">
+        <div class="container">
+            <h1 class="sk"><i class="fas fa-cogs"></i> Skills & Abilities</h1>
+            <div class="row">
+                <div class="col-md-4 my-3">HTML <i class="fa-brands fa-html5"></i></div>
+                <div class="col-md-4 my-3">CSS <i class="fa-brands fa-css3"></i></div>
+                <div class="col-md-4 my-3">JavaScript <i class="fa-brands fa-js"></i></div>
+                <div class="col-md-4 my-3">Angular <i class="fa-brands fa-angular"></i></div>
+                <div class="col-md-4 my-3">Symfony <i class="fa-brands fa-symfony"></i></div>
+                <div class="col-md-4 my-3">Java <i class="fa-brands fa-java"></i></div>
+                <div class="col-md-4 my-3">Python <i class="fa-brands fa-python"></i></div>
+                <div class="col-md-4 my-3">PHP <i class="fa-brands fa-php"></i></div>
+                <div class="col-md-4 my-3">MySQL <i class="fas fa-database"></i></div>
+            </div>
+        </div>
     </section>
+    
 
-    <section id="contact">  
-        <h1 class="sk" > <i class="fas fa-map-marker-alt"></i>Contact  Info</h1>
-        <br><br>
-        <ul class="m">
-            <li><i class="fas fa-envelope email-icon "></i>mohamed.hassouna.2004.24@gmail.com</li>
-            <br>
-            <li><i class="fas fa-phone phone-icon"></i>+216 52059808</li>
-            <br>
-            <li><i class="fas fa-map-marker-alt map-icon"></i>Bembla, Monastir, tunisia</li>
-            <br>
-        </ul>
-    </section> 
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h1 class="sk"><i class="fas fa-map-marker-alt"></i> Contact Info</h1>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-envelope email-icon"></i> mohamed.hassouna.2004.24@gmail.com</li>
+                <li><i class="fas fa-phone phone-icon"></i> +216 52 059 808</li>
+                <li><i class="fas fa-map-marker-alt map-icon"></i> Bembla, Monastir, Tunisia</li>
+            </ul>
+        </div>
+    </section>
+     
 
-    <footer>
-        <p>Copyright &copy; 2024 Portfolio, Mohamed Hassouna . All rights reserved. </p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>Copyright &copy; 2024 Portfolio, Mohamed Hassouna. All rights reserved.</p>
     </footer>
+    
     
 </body>
 </html>
